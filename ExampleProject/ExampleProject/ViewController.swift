@@ -15,9 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 		let date = "2015-06-17T09:10:00.000Z".toDate(format: DateFormat.ISO8601)
-		var d = NSDate()-1.hour
-		var abb = d.toRelativeString(abbreviated: true, maxUnits: 3)
-		println("data: \(abb)")
+		let d = NSDate()-1.hour
+		let abb = d.toRelativeString(abbreviated: true, maxUnits: 3)
+		print("data: \(abb)")
 //		
 //		let w = NSDate()-1.month
 //		print("Prev month: \(w)")
